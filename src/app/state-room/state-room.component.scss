@@ -1,24 +1,31 @@
 @import '../../partials/importer.scss';
 
+p {
+  margin: .5em 0;
+}
+
 .wrapper {
   margin: 0 1vw;
-  width: 10vw;
+  min-width: 10vw;
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
   align-items: center;
+  cursor: pointer;
+}
+
+.meta {
+  font-size: .8em;
+}
+
+.radio-circle {
+  display: none;
 }
 
 .price {
-  width: 100%;
-  text-align: center;
-  color: $blue;
-  background: $white;
-  border: 1px solid $black;
-  transition: all 250ms;
+  @extend %btn-white;
 }
 
 .selected {
-  color: $white;
-  background: $blue;
+  color: red !important;
 }

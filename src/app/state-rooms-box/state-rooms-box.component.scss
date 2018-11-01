@@ -1,15 +1,24 @@
 @import '../../partials/importer.scss';
 
 .state-rooms-box {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  margin: 0 1em;
+  padding: .5em;
+  background: $white;
   border: 2px solid $light-grey;
+
+  &__inner {
+    min-height: 25vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    background: $light-blue;
+  }
 }
 
 .rooms-row {
   width: 100%;
-  background: yellow;
   display: flex;
   justify-content: center;
   align-items: flex-end;
@@ -21,4 +30,27 @@
   text-align: center;
   color: $dark-blue;
   background: $orange;
+  cursor: pointer;
+  transition: all 250ms;
+
+  p {
+    margin: .5em 0;
+  }
+}
+
+.book-now:hover {
+  transform: scale(1.1);
+  box-shadow: 0 0 .4em rgba(0,0,0,.3);
+}
+
+.fine-print {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  &__text {
+    font-size: 12px;
+    text-decoration: underline;
+  }
 }

@@ -1,0 +1,14 @@
+%btn-white {
+  width: 100%;
+  text-align: center;
+  color: $blue;
+  background: $white;
+  border: 1px solid $black;
+  cursor: pointer;
+  transition: all 250ms;
+}
+
+%btn-white:hover, %btn-white:checked {
+  color: $white;
+  background: $blue;
+}

@@ -1,19 +1,18 @@
-<p>
-  DEPARTURE DATE:
-</p>
+<div>
+  <p>DEPARTURE DATE:</p>
 
-<p>
-  {{details.dateDepart}}
-</p>
+  <p class='date'>{{toDate(details.dateDepart)}}</p>
 
-<p>
-  SHIP: {{details.ship.displayName}}
-</p>
+  <p>
+    <span>SHIP: </span>{{details.ship.displayName}}
+  </p>
 
-<p>
-  DEPARTS: {{details.disembarkPort.portName}}
-</p>
+  <p>
+    <span>DEPARTS: </span>{{details.disembarkPort.portName}}
+  </p>
 
-<p>
-  ARRIVES: {{details.embarkPort.portName}}
-</p>
+  <p>
+    <span>ARRIVES: </span>{{details.embarkPort.portName}}
+  </p>
+  
+</div>

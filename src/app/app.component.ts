@@ -17,8 +17,8 @@ export class AppComponent implements OnInit {
   constructor(private apiDataService: ApiDataService) { }
 
   ngOnInit() {
-    this.apiDataService.getData().subscribe(data => {
-      this.itineraries = data.data[0].attributes.itineraries;
+    this.apiDataService.getData().subscribe(res => {
+      if (res) this.itineraries = res.data[0].attributes.itineraries;
       console.log('this.data: ', this.itineraries);
     })
   }

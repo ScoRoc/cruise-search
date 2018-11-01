@@ -1,0 +1,51 @@
+@import '../../partials/importer.scss';
+
+p {
+  margin: .5em 0;
+  color: $med-dark-grey;
+}
+
+span {
+  color: $black;
+}
+
+.wrapper {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.upper-text {
+  margin-top: .3em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.price {
+  margin: 0;
+  color: $dark-blue;
+  font-size: 2.1em;
+}
+
+.fine-print {
+  // margin-bottom: 3em;
+  color: $dark-blue;
+  font-size: .8em;
+  text-decoration: underline;
+}
+
+.view {
+  @extend %btn-white;
+  width: 65%;
+
+  p {
+    color: $dark-blue;
+  }
+}
+
+.view:hover p {
+  color: $white;
+}

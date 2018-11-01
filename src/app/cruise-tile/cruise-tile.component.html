@@ -5,13 +5,19 @@
   <div class='top-row'>
 
     <app-map-mini></app-map-mini>
-    <app-details [details]='itinerary.voyages[0]'></app-details>
-    <app-from-price [fromPrice]='itinerary.voyages[0]'></app-from-price>
+    <div class='top-row__text'>
+      <app-details [details]='itinerary.voyages[0]'></app-details>
+      <app-from-price [fromPrice]='itinerary.voyages[0]'></app-from-price>
+    </div>
 
   </div>
 
   <app-state-rooms-box [fromPrice]='itinerary.voyages[0]' [stateRooms]='itinerary.voyages[0].stateRooms' [currencySymbol]='itinerary.voyages[0].currencySymbol'></app-state-rooms-box>
 
-  <p>fine print here....</p>
+  <p>*The deposit on this cruise is fully non-refundable. Fares shown are in US$, per person, based on double
+    occumpance. Fares reflect best fare available for a stateroom in each category, on one date that this
+    itinerary is available from a snapshot taken in the last 24 hours.
+    <span>View Pricing Terms</span>
+  </p>
 
 </div>

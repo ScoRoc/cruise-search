@@ -1,6 +1,16 @@
-<p>From</p>
-<p>
-  {{fromPrice.currencySymbol}}{{fromPrice.lowestVoyagePrice}}
-</p>
-<p>per person Interior</p>
-<p>*{{fromPrice.TFPE.text}} {{fromPrice.currencySymbol}}{{fromPrice.TFPE.price}}</p>
+<div class='wrapper'>
+
+  <div class='upper-text'>
+    <p>From {{details.meta}}</p>
+    <p class='price'>
+      {{fromPrice.currencySymbol}}{{fromPrice.lowestVoyagePrice}}
+    </p>
+    <p>per person <span>Interior</span></p>
+    <p class='fine-print'>*{{fromPrice.TFPE.text}} {{fromPrice.currencySymbol}}{{fromPrice.TFPE.price}}</p>
+  </div>
+
+  <div class='view'>
+    <p>VIEW ITINERARY</p>
+  </div>
+
+</div>

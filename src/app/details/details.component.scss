@@ -1,0 +1,24 @@
+@import '../../partials/importer.scss';
+
+div {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+p {
+  margin: .5em;
+  color: $black;
+}
+
+span {
+  color: $med-dark-grey;
+  font-weight: lighter;
+}
+
+.date {
+  margin-left: 1em;
+  color: $dark-blue;
+  font-weight: bold;
+}

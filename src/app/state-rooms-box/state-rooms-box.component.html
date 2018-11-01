@@ -1,16 +1,22 @@
 <div class='state-rooms-box'>
 
-  <div class='rooms-row'>
+  <div class='state-rooms-box__inner'>
 
-    <div *ngFor='let room of stateRooms'>
-        <app-state-room [stateRoom]='room' [currencySymbol]='currencySymbol'></app-state-room>
+    <div class='rooms-row'>
+
+      <div *ngFor='let room of stateRooms; let idx = index'>
+          <app-state-room [idx]='idx' [stateRoom]='room' [currencySymbol]='currencySymbol'></app-state-room>
+      </div>
+      <div class='book-now'>
+          <p>BOOK NOW</p>
+      </div>
+
     </div>
-    <div class='book-now'>
-        <p>BOOK NOW</p>
+
+    <div class='fine-print'>
+      <p class='fine-print__text'>*{{fromPrice.TFPE.text}} {{fromPrice.currencySymbol}}{{fromPrice.TFPE.price}}</p>
     </div>
 
   </div>
-
-  *{{fromPrice.TFPE.text}} {{fromPrice.currencySymbol}}{{fromPrice.TFPE.price}}
 
 </div>

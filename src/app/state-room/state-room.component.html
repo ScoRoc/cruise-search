@@ -1,16 +1,19 @@
-<label class='wrapper' for='{{stateRoom.meta}}'>
+<label (click)='handleClick(stateRoom)' class='wrapper' for='{{stateRoom.meta + idx}}'>
 
-  <p>{{stateRoom.meta}}</p>
-  <!-- <input
-    class='price'
-    id='stateRoom.meta'
+  <p class='meta'>{{toUpper(stateRoom.meta)}}</p>
+  <input
+    class='radio-circle'
+    id='{{stateRoom.meta + idx}}'
     name='rooms'
     type='radio'
-    [value]='3'
-  > -->
+    [value]="stateRoom.priceBlocks[0].currencyCode === 'SOLD_OUT' ? 'Sold Out' : stateRoom.priceBlocks[0].prices[0].fare"
+  >
+  <span class='price'>
+    <p *ngIf='stateRoom.priceBlocks[0].currencyCode !== "SOLD_OUT"'>{{currencySymbol}}{{stateRoom.priceBlocks[0].prices[0].fare}}*</p>
+    <p *ngIf='stateRoom.priceBlocks[0].currencyCode === "SOLD_OUT"'>Sold Out</p>
+  </span>
 
 </label>
 
 
 <!-- [(ngModel)]='radioSelected' -->
-<!-- [value]='stateRoom.priceBlocks[0].currencyCode === "SOLD_OUT ? '{{currencySymbol}}{{stateRoom.priceBlocks[0].prices[0].fare}}*' : "Sold Out" ;' -->
