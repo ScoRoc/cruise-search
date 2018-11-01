@@ -44,6 +44,11 @@ span {
   p {
     color: $dark-blue;
   }
+
+  @media screen and (max-width: $break-small) {
+    width: 75%;
+    margin: 1.5em 0;
+  }
 }
 
 .view:hover p {

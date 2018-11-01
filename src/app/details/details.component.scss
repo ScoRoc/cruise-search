@@ -5,6 +5,10 @@ div {
   display: flex;
   flex-direction: column;
   justify-content: center;
+
+  @media screen and (max-width: $break-small) {
+    margin: 1.5em 0;
+  }
 }
 
 p {
@@ -21,4 +25,8 @@ span {
   margin-left: 1em;
   color: $dark-blue;
   font-weight: bold;
+}
+
+.time {
+  margin: .2em;
 }

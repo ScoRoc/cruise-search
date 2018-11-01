@@ -10,7 +10,7 @@ import { FromPrice } from '../from-price'
 })
 export class FromPriceComponent implements OnInit {
   @Input() fromPrice: FromPrice;
-  // private details: any = this.stateRoomService.getRoom();
+  @Input() fromPriceDetails: any;
   private details: any = {};
 
   constructor(private stateRoomService: StateRoomService) { }
@@ -20,7 +20,7 @@ export class FromPriceComponent implements OnInit {
   }
 
   getDetails() {
-    this.details = this.stateRoomService.getRoom();
+    this.stateRoomService.getRoom().subscribe(data => this.details = data);
     console.log('details: ', this.details);
   }
 

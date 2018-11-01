@@ -12,6 +12,11 @@ p {
   justify-content: flex-end;
   align-items: center;
   cursor: pointer;
+
+  @media screen and (max-width: $break-small) {
+    margin-top: 1.5em;
+    width: 30vw;
+  }
 }
 
 .meta {
