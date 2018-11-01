@@ -1,0 +1,24 @@
+@import '../../partials/importer.scss';
+
+.state-rooms-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 2px solid $light-grey;
+}
+
+.rooms-row {
+  width: 100%;
+  background: yellow;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+.book-now {
+  margin-left: 1vw;
+  width: 10vw;
+  text-align: center;
+  color: $dark-blue;
+  background: $orange;
+}

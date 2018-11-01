@@ -1,0 +1,17 @@
+<div class='cruise-tile-wrapper'>
+
+  <h1>{{itinerary.voyages[0].itinerary.description}}</h1>
+
+  <div class='top-row'>
+
+    <app-map-mini></app-map-mini>
+    <app-details [details]='itinerary.voyages[0]'></app-details>
+    <app-from-price [fromPrice]='itinerary.voyages[0]'></app-from-price>
+
+  </div>
+
+  <app-state-rooms-box [fromPrice]='itinerary.voyages[0]' [stateRooms]='itinerary.voyages[0].stateRooms' [currencySymbol]='itinerary.voyages[0].currencySymbol'></app-state-rooms-box>
+
+  <p>fine print here....</p>
+
+</div>

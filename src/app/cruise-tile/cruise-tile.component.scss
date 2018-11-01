@@ -1,0 +1,22 @@
+@import '../../partials/importer.scss';
+
+$radius: 5px;
+
+h1 {
+  margin: 0;
+  padding: .5em 0 .5em .5em;
+  color: $white;
+  background: $dark-blue;
+  border-radius: $radius $radius 0 0;
+}
+
+.cruise-tile-wrapper {
+  margin: 5vh 0;
+  border: 2px solid $light-grey;
+  border-radius: $radius;
+}
+
+.top-row {
+  display: flex;
+  
+}

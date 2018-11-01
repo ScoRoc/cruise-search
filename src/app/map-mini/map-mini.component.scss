@@ -1,0 +1,19 @@
+@import '../../partials/importer.scss';
+
+.img-wrapper {
+  margin-top: 1em;
+  margin-left: 1em;
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  border: 2px solid $light-grey;
+  border-top: none;
+
+  p {
+    margin: 0;
+  }
+
+  .fa-search-plus {
+    margin-left: 12px;
+  }
+}
