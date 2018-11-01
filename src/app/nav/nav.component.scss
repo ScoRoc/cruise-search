@@ -2,8 +2,9 @@
 
 nav {
   height: 15vh;
-  padding-left: 3%;
+  padding: 0 3%;
   display: flex;
+  justify-content: space-between;
   align-items: center;
   color: $white;
   background: $blue;
@@ -11,4 +12,16 @@ nav {
 
 p {
   margin: 0;
+}
+
+ul {
+  display: flex;
+  width: 20%;
+  justify-content: space-around;
+}
+
+li {
+  padding: .2em;
+  list-style-type: none;
+  cursor: pointer;
 }
