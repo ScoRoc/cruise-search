@@ -8,6 +8,10 @@ nav {
   align-items: center;
   color: $white;
   background: $blue;
+
+  @media screen and (max-width: $break-small) {
+    height: 10vh;
+  }
 }
 
 p {
@@ -16,7 +20,7 @@ p {
 
 ul {
   display: flex;
-  width: 20%;
+  width: 28%;
   justify-content: space-around;
 }
 
@@ -24,4 +28,16 @@ li {
   padding: .2em;
   list-style-type: none;
   cursor: pointer;
+}
+
+.desktop {
+  @media screen and (max-width: $break-small) {
+    display: none;
+  }
+}
+
+.mobile {
+  @media screen and (min-width: $break-small) {
+    display: none;
+  }
 }
